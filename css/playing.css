@@ -1,0 +1,109 @@
+/* pccountPoints = 0
+pcRound += 1
+for (i in allCategories) {
+    
+    pcPlay = Math.floor(Math.random() * 2)
+    console.log("one or zero", pcPlay)
+    if (pcPlay == 0) {
+        let pcRandomWord = allCategories[i][Math.floor(Math.random() * allCategories[i].length)]
+
+
+        if (pcRound<=1){
+            console.log("numero do round",pcRound)
+            document.querySelector(`#${pcliCategoriesChanged[i]}`).setAttribute("value", pcRandomWord)
+            console.log("word ", pcRandomWord)
+            pcWord = document.querySelector(`#${pcliCategoriesChanged[i]}`)
+        }else if
+            (pcRound>=3){document.querySelector(`#${pcinputCategories[i]}`).setAttribute("value", pcRandomWord)
+            console.log("word ", pcRandomWord)
+            pcWord = document.querySelector(`#${pcinputCategories[i]}`)
+        }
+
+        pcWord.style.color = "green"
+        pccountPoints += 10
+    } else {
+        if (pcRound<=1) {
+            document.querySelector(`#${pcliCategoriesChanged[i]}`).setAttribute("value", "I don't know")
+            console.log("word ", pcRandomWord)
+            pcWord = document.querySelector(`#${pcliCategoriesChanged[i]}`)
+        } else  if
+        (pcRound>=){
+            document.querySelector(`#${pcinputCategories[i]}`).setAttribute("value", "I don't know")
+            pcWord = document.querySelector(`#${pcinputCategories[i]}`)
+        }
+        pcWord.style.color = "red"
+        
+    }
+}
+pcscoreTotal += pccountPoints
+if(pcRound<=1){
+document.querySelector("#score_3 ").setAttribute("value", pccountPoints)
+// let pcscoress = document.querySelector("#score_2").value
+document.querySelector("#scoreTop2").setAttribute("value", pcscoreTotal)
+document.getElementById("scoreTop2").innerHTML = `Total: ${pcscoreTotal}`
+}else{
+    document.querySelector("#score_2").setAttribute("value", pccountPoints)
+    // let pcscoress = document.querySelector("#score_2").value
+    document.querySelector("#scoreTop2").setAttribute("value", pcscoreTotal)
+    document.getElementById("scoreTop2").innerHTML = `Total: ${pcscoreTotal}`
+} */
+
+/----------------------------------------------------------------------//
+//  PC CHOOSES ANIMAL
+//----------------------------------------------------------------------//    
+
+    pccountPoints = 0
+    pcRound += 1
+
+    let gameLetter = document.querySelector("#letter").innerHTML
+
+    //random if pc will play
+    pcPlayAnimal=Math.floor(Math.random() * 2) 
+    //PC plays
+            if (pcPlayAnimal==0) {
+    
+                //loop in the animal category
+                animalWordCount=0 
+                let animalArray=[] 
+                for (let x=0; x<animalCategory.lenght; x++) 
+                {
+                        if (animalCategory[x][0]==gameLetter) {
+                        //create an array to store the word
+                        animalArray[animalWordCount]=animalCategory[x] 
+                        animalWordCount++
+                                      
+                    //if undefined than add "NONE"
+                } else  {
+                // if(animalCategory[x]===undefined) {
+                        /* document.querySelector("#animal_2").disabled=true; */
+                        document.querySelector("#animal_2").setAttribute("value", "NONE FOR THIS");
+                        //SET word red
+                        pcAnimalWord=document.querySelector("#animal_2") 
+                        pcAnimalWord.style.color="red"
+
+                    }
+                }
+                    //PC plays
+                    let pcAnimalRandom =animalArray[Math.floor(Math.random() * animalArray.length)]
+                    console.log("this is the number of words", animalWordCount) 
+                    document.querySelector("#animal_2").setAttribute("value", pcAnimalRandom);
+                    pcAnimalWord=document.querySelector("#animal_2") 
+                    pcAnimalWord.style.color="green"
+                    x=animalCategory.lenght
+                    pccountPoints += 10
+            //PC doesn't play
+        }else{
+
+            pcAnimalWord = document.querySelector("#animal_2")
+            document.querySelector("#animal_2").setAttribute("value", "IDK, YOU GOT ME!")
+            pcAnimalWord.style.color = "red"
+            
+            
+        }
+        console.log("pontos", pccountPoints)
+    }
+    pcscoreTotal += pccountPoints
+
+    document.querySelector("#score_2").setAttribute("value", pccountPoints)
+    // document.querySelector("#scoreTop2").setAttribute("value", pcscoreTotal)
+    document.getElementById("scoreTop2").innerHTML = `Total: ${pcscoreTotal}`

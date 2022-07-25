@@ -1,0 +1,663 @@
+/* 
+O componente de tabelas vai ser útil para fazer aquele efeito de folha de caderno que você queria
+https://getbootstrap.com/docs/4.3/content/tables/
+
+Esse componente vai ser útil para voce deixar bonitinho os containers
+https://getbootstrap.com/docs/4.3/components/card/#body
+
+*/
+
+/* 
+-------------------------------------------------------
+                    DISPLAY GAME    
+-------------------------------------------------------
+ */
+ body{
+    background-color: bisque;
+ }
+#playing-game,#players1
+{
+    display:none
+}
+ 
+
+#plaing-game_1,#players,#game-player2
+
+{
+    display: block;
+}
+
+
+/* 
+-------------------------------------------------------
+                    OPACITY    
+-------------------------------------------------------
+ */
+
+
+#rounds
+
+{
+    opacity: 0.0;
+}
+
+
+/* #players,
+#rounds,
+ */
+/* {
+    opacity: 1;
+} */
+
+/* 
+-------------------------------------------------------
+                 REGULAR BORDER
+-------------------------------------------------------
+ */
+
+body, 
+/* #title-stop,  */
+#main, 
+.btn,
+#footer-name,
+.ipt_player_1,
+#timers,
+#game-player,
+#game-player2,
+#player-score,
+#player-score2,
+#round-timer,
+.categoryChange,
+.category2,
+.category,
+#name-text, 
+#score-text
+{
+    border: 2px solid black;
+}
+
+
+/* 
+-------------------------------------------------------
+                 BORDER-RADIUS
+-------------------------------------------------------
+ */
+
+/* 15px */
+#btn-rule,
+#footer-name,
+#name-text,
+#score-text{
+    border-radius: 15px;
+}
+
+/* 20px */
+#btn-5rounds,
+#btn-10rounds,
+#btn-next,
+#upt-player,
+#upt-player_1,
+#btn-ready_1,
+#btn-ready_2,
+#timers,
+#round-timer
+.timer
+{
+    border-radius: 20px;
+}
+
+/* 25px */
+#player-score2,
+#player-score
+{
+    border-radius: 25px;
+}
+
+/* 30px */
+#btn-rules, 
+#btn-player_1,
+#btn-player_2
+/* #btn-1player,
+#btn-2player */
+{
+    border-radius: 30px;
+}
+
+/* 35px */
+#title-stop,
+#btn-stop,
+#btn-rules,
+#btn-player_1,
+#btn-player_2
+/* #btn-1player,
+#btn-2player */
+{
+    border-radius: 35px;
+}
+
+/* 50px */
+#btn-start,
+.categoryChange,
+.category
+.category2
+{
+    border-radius: 50px;
+}
+
+/* 55% */
+#btn-back,
+#btn-restart
+{
+    border-radius: 55%;
+}
+
+/* 75px */
+#main,
+.ipt_player_1,
+.ipt_player_2,
+#end
+{
+    border-radius: 75px;
+}
+
+/* 100px */
+#div_player_1,
+#div_player_2
+{
+    border-radius: 100px;
+}
+
+/* 120px */
+#game-player2,
+#game-player
+{
+    border-radius: 120px;
+}
+body{
+    border-radius: 200px;
+}
+
+/* 
+-------------------------------------------------------
+                    FONT SIZE
+-------------------------------------------------------
+ */
+
+/* 20px */
+.footer,
+#btn-rule, 
+#footer-name,
+#btn-5rounds,
+#btn-10rounds,
+#upt-player,
+#upt-player_1,
+#btn-ready_1,
+#btn-ready_2,
+#timers,
+#round-timer
+{
+    font-size: 20px;
+}
+
+/* 25px */
+#btn-back
+#btn-restart
+.timer
+#player-score2
+#player-score
+{
+    font-size: 25px;
+}
+
+/* 35px */
+#btn-rules,
+#btn-player_1,
+#btn-player_2,
+/* #btn-1player,
+#btn-2player */
+#btn-next
+{
+    font-size: 35px;
+}
+
+/* 40px */
+#winner-text
+{
+    font-size: 40px;
+}
+
+ /* 72PX */
+ /* #title-stop */
+ #btn-stop
+ {
+    font-size: 72px;
+}
+
+ /* 80px */
+ #players
+ #rounds
+ #btn-start
+ {
+    font-size: 80px;
+}
+
+/* large */
+.category,
+.category2,
+.categoryChange
+{
+    font-size: large;
+}
+
+/* 
+-------------------------------------------------------
+                    PADDING    
+-------------------------------------------------------
+ */
+
+
+
+ /* 
+-------------------------------------------------------
+                    MARGIN
+-------------------------------------------------------
+ */
+
+
+
+
+ /* 
+-------------------------------------------------------
+                    POSITION
+-------------------------------------------------------
+ */ 
+
+ /* relative */
+ #main,
+ #div_player_1,
+ #div_player_2,
+ .ipt_player_1,
+ .ipt_player_2,
+ #header-timer,
+ 
+ #end
+ {
+    position: relative;
+ }
+
+ /* absolute */
+ #start, 
+ #players,
+ #rounds
+ {
+    position: absolute;
+ }
+/* 
+-------------------------------------------------------
+                WINDOW - SIZE
+-------------------------------------------------------
+ */
+
+body{
+    margin: 20px 10px 20px 10px;
+    min-height: 1200px;
+    min-width: 1800px;
+    max-width: 1800px;
+    max-height: 2000px;
+}
+/* 
+-------------------------------------------------------
+                GAME TITLE
+-------------------------------------------------------
+ */
+#header {
+    padding: 20px 10%;
+}
+#btn-stop{
+    padding: 10px 626px 10px 626px;
+    text-align: center;
+}
+#title-stop
+ {
+    /* text-align: center; */
+    /* padding: 20px; */
+    border-radius: 35px;
+    margin-top: 2%;
+    /* font-size: 72px; */
+}
+/* 
+-------------------------------------------------------
+                    FOOTER
+-------------------------------------------------------
+ */
+.footer {
+    height: 10%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+#footer-name {
+    margin-left: 35%;
+    padding: 15px 50px 15px 50px;
+} 
+#btn-rule {
+    margin-right: 35%;
+    padding: 15px 70px 15px 70px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+/* 
+-------------------------------------------------------
+              GAME SCREEN SIZE 
+-------------------------------------------------------
+ */
+#game {
+    height: 60%;
+    /* margin-top: 50% */
+}
+
+#main {
+    margin: 12% 30%;
+    height: 500px;
+    /* position: relative; */
+    border-radius: 75px;
+}
+ /* 
+-------------------------------------------------------
+                    START
+-------------------------------------------------------
+ */
+
+#start #btn-start {
+    position: absolute;
+    font-size: 80px;
+    top: 150px;
+    left: 170px;
+    padding: 30px 60px 30px 60px;
+    border-radius: 50px;
+}
+
+/* 
+-------------------------------------------------------
+                PLAYERS 1 or 2
+-------------------------------------------------------
+ */
+ #players{
+    top: 12%;
+    right: 30%;
+    font-size: 80px;
+}
+
+#btn-rules, 
+#btn-player_1,
+#btn-player_2
+/* #btn-1player,
+#btn-2player */{
+    font-size: 35px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 30px;
+}
+
+
+#btn-rules{
+    padding: 20px 80px 20px 80px;
+}
+
+ /* 
+-------------------------------------------------------
+              NAMES PLAYERS
+-------------------------------------------------------
+ */
+ /* #btn-back
+ , */
+ #names{
+    margin-bottom: 300px;
+    position: relative;
+ }
+ #btn-restart
+ {
+    font-size: 25px;
+    border-radius: 55%;
+    padding: 15px 15px;
+
+}
+#ready{
+    height: 200px;
+    top: -111px;
+}
+#div_player_1
+/* ,#div_player_2 */
+{
+    top: 100px;
+    height: 100px;
+
+}
+#upt-player, #upt-player_1{
+    font-size: 20px;
+    padding: 30px 100px 30px 100px;
+    border-radius: 20px;
+    margin-left: 20%;
+
+}
+
+#btn-ready_1,#btn-ready_2{
+    font-size: 20px;
+    padding: 20px 80px 20px 80px;
+    border-radius: 20px;
+    margin-left: 33%;
+    margin-top: 25%;
+}
+#btn-back{
+    margin-top: -160%;
+    margin-left: -20%;
+}
+.ipt_player_1{
+    margin: -40% 30% 0 30%;
+    height: 500px;
+}
+.ipt_player_2{
+
+    margin: -28% 30% 15% 30%;
+    height: 500px;
+
+}
+
+
+ /* 
+-------------------------------------------------------
+              PLAYING
+-------------------------------------------------------
+ */
+
+ #header-timer{
+    height: 150px;
+    margin: -49% 250px -3% 250px;
+    position: relative;
+}
+#game-player2,
+#game-player{
+    height: 750px;
+    margin: 50px 170px 50px 170px;
+    border-radius: 120px;
+}
+#timers,#round-timer{
+    font-size: 20px;
+    padding: 40px 20px 30px 20px;
+    border-radius: 20px;
+    height: 120px;
+}
+#timers{
+    margin: 0 50% 20% 10%;
+}
+#round-timer{
+    text-align: center;
+    margin: -29.3% 10% 20% 70%;
+}
+
+.timer{
+     font-size: 25px;
+    border-radius: 20px;
+}
+#timer, #letter{
+    margin-left: 65px;
+}
+#player-score2,
+#player-score{
+    margin-top: 2%;
+    padding: 25px 100px 25px 100px;
+    margin: 1% 150px 0 150px;
+    border-radius: 25px;  
+
+}
+#category2,
+#category{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 10px 10px 10px;
+    height: 570px;
+
+}
+.span-category2,
+.span-category{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+.categoryChange,
+.category2,
+.category{
+    padding: 20px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: large;
+}
+li{
+    padding-top: 15px;
+}
+.liChage,
+.li,
+.li2
+{
+    border-radius: 10px;
+}
+#scoreTop2,
+#scoreTop{
+    float: right;
+    margin-right: 50px;
+}
+
+
+ 
+ /* 
+-------------------------------------------------------
+            Z -INDEX
+-------------------------------------------------------
+ */
+
+
+ #playing-game,#game-play{
+    z-index: 1;
+    /* opacity: 0.0; */
+}
+
+
+
+/* #rounds{
+    opacity: 0.0;
+    top: 55%;
+    right: 18%;
+    font-size: 80px;
+}
+
+
+
+#btn-5rounds,#btn-10rounds{
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+}
+#btn-10rounds{
+    margin-left: 70px;
+}
+
+#btn-next{ 
+     era 40px  */
+    /* font-size: 35px;
+    padding: 30px 80px 30px 80px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+#back{
+    margin-left: 80%;
+}
+
+#end{
+    margin: -38% 40% 5%;
+    height: 500px;
+    position: relative;
+    border-radius: 75px;
+    font-size: 20px;
+}
+#winner-text{
+    font-size: 40px;
+    margin-left: 30%;
+}
+#winner,#winner-name,#winner-score{
+    padding-bottom: 35px;
+}
+#winner-name,#winner-score{
+    margin: 20px;
+}
+#name-text, #score-text{
+   border-radius: 15px;
+}
+#btn-restart{
+    margin: 10px 0 0 100%;
+}
+#name-text{
+    padding: 20px 140px;
+}
+#winner-score{
+    padding-left:  95px;
+    padding-top: 20px;
+}
+#score-text{
+    padding: 20px 40px;
+} */
+/* 
+-------------------------------------------------------
+ These needs to change id name to change position
+-------------------------------------------------------
+ */
+
+/* #timers{
+    opacity: 1;
+    margin: 290px 35%;
+}
+#timer{
+    opacity: 0.0;
+}
+#letter{
+    padding-left: 50px;
+} */
+
+/* ---------------- */
+#end{
+    opacity: 0.0;
+}
+
+#newRules{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+#list{
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+
